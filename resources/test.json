@@ -1,0 +1,288 @@
+{
+  "preference": {
+    "isFulfilled": true,
+    "isRejected": false,
+    "fulfillmentValue": {
+      "body": {
+        "processing_modes": [],
+        "metadata": {},
+        "binary_mode": false,
+        "payment_methods": {
+          "excluded_payment_methods": [
+            {
+              "id": ""
+            }
+          ],
+          "excluded_payment_types": [
+            {
+              "id": ""
+            }
+          ],
+          "installments": null,
+          "default_payment_method_id": null,
+          "default_installments": null
+        },
+        "collector_id": 211601475,
+        "operation_type": "regular_payment",
+        "items": [
+          {
+            "id": "",
+            "picture_url": "",
+            "title": "Playstation PS4 pro white edition.",
+            "description": "",
+            "category_id": "",
+            "currency_id": "ARS",
+            "quantity": 1,
+            "unit_price": 300
+          }
+        ],
+        "payer": {
+          "name": "Cosme Fulanito",
+          "surname": "",
+          "email": "zerox_94_mm@hotmail.com",
+          "date_created": "",
+          "phone": {
+            "area_code": "11",
+            "number": "47120749"
+          },
+          "identification": {
+            "type": "DNI",
+            "number": "35991142"
+          },
+          "address": {
+            "street_name": "",
+            "street_number": null,
+            "zip_code": ""
+          }
+        },
+        "back_urls": {
+          "success": "http://localhost:4300/MP/success",
+          "pending": "http://localhost:4300/MP/pending",
+          "failure": "http://localhost:4300/MP/failure"
+        },
+        "auto_return": "",
+        "client_id": "5258902679507034",
+        "marketplace": "NONE",
+        "marketplace_fee": 0,
+        "shipments": {
+          "receiver_address": {
+            "zip_code": "",
+            "street_number": null,
+            "street_name": "",
+            "floor": "",
+            "apartment": ""
+          }
+        },
+        "notification_url": null,
+        "external_reference": "",
+        "additional_info": "{\\"name\\":\\"Cosme Fulanito\\",\\"email\\":\\"zerox_94_mm@hotmail.com\\",\\"identification\\":{\\"type\\":\\"DNI\\",\\"number\\":\\"35991142\\"}}",
+        "expires": false,
+        "expiration_date_from": null,
+        "expiration_date_to": null,
+        "date_created": "2019-09-13T10:42:37.097-04:00",
+        "id": "211601475-287e9ca8-ab1a-464a-9043-5bf3ef88b374",
+        "init_point": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=211601475-287e9ca8-ab1a-464a-9043-5bf3ef88b374",
+        "sandbox_init_point": "https://sandbox.mercadopago.com.ar/checkout/v1/redirect?pref_id=211601475-287e9ca8-ab1a-464a-9043-5bf3ef88b374"
+      },
+      "response": {
+        "processing_modes": [],
+        "metadata": {},
+        "binary_mode": false,
+        "payment_methods": {
+          "excluded_payment_methods": [
+            {
+              "id": ""
+            }
+          ],
+          "excluded_payment_types": [
+            {
+              "id": ""
+            }
+          ],
+          "installments": null,
+          "default_payment_method_id": null,
+          "default_installments": null
+        },
+        "collector_id": 211601475,
+        "operation_type": "regular_payment",
+        "items": [
+          {
+            "id": "",
+            "picture_url": "",
+            "title": "Playstation PS4 pro white edition.",
+            "description": "",
+            "category_id": "",
+            "currency_id": "ARS",
+            "quantity": 1,
+            "unit_price": 300
+          }
+        ],
+        "payer": {
+          "name": "Cosme Fulanito",
+          "surname": "",
+          "email": "zerox_94_mm@hotmail.com",
+          "date_created": "",
+          "phone": {
+            "area_code": "11",
+            "number": "47120749"
+          },
+          "identification": {
+            "type": "DNI",
+            "number": "35991142"
+          },
+          "address": {
+            "street_name": "",
+            "street_number": null,
+            "zip_code": ""
+          }
+        },
+        "back_urls": {
+          "success": "http://localhost:4300/MP/success",
+          "pending": "http://localhost:4300/MP/pending",
+          "failure": "http://localhost:4300/MP/failure"
+        },
+        "auto_return": "",
+        "client_id": "5258902679507034",
+        "marketplace": "NONE",
+        "marketplace_fee": 0,
+        "shipments": {
+          "receiver_address": {
+            "zip_code": "",
+            "street_number": null,
+            "street_name": "",
+            "floor": "",
+            "apartment": ""
+          }
+        },
+        "notification_url": null,
+        "external_reference": "",
+        "additional_info": "{\"name\":\"Cosme Fulanito\",\"email\":\"zerox_94_mm@hotmail.com\",\"identification\":{\"type\":\"DNI\",\"number\":\"35991142\"}}",
+        "expires": false,
+        "expiration_date_from": null,
+        "expiration_date_to": null,
+        "date_created": "2019-09-13T10:42:37.097-04:00",
+        "id": "211601475-287e9ca8-ab1a-464a-9043-5bf3ef88b374",
+        "init_point": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=211601475-287e9ca8-ab1a-464a-9043-5bf3ef88b374",
+        "sandbox_init_point": "https://sandbox.mercadopago.com.ar/checkout/v1/redirect?pref_id=211601475-287e9ca8-ab1a-464a-9043-5bf3ef88b374"
+      },
+      "status": 201
+    }
+  },
+  "response": {
+    "metadata": {},
+    "operation_type": "regular_payment",
+    "fee_details": [
+      {
+        "amount": 12.66,
+        "fee_payer": "collector",
+        "type": "mercadopago_fee"
+      }
+    ],
+    "notification_url": null,
+    "date_approved": "2019-09-13T10:43:31.000-04:00",
+    "acquirer": null,
+    "money_release_schema": null,
+    "payer": {
+      "first_name": "Test",
+      "last_name": "Test",
+      "email": "test_user_80507629@testuser.com",
+      "identification": {
+        "number": "32659430",
+        "type": "DNI"
+      },
+      "phone": {
+        "area_code": "01",
+        "number": "1111-1111",
+        "extension": ""
+      },
+      "type": "registered",
+      "entity_type": null,
+      "id": "32511764"
+    },
+    "transaction_details": {
+      "total_paid_amount": 300,
+      "acquirer_reference": null,
+      "installment_amount": 300,
+      "financial_institution": null,
+      "net_received_amount": 287.34,
+      "overpaid_amount": 0,
+      "external_resource_url": null,
+      "payable_deferral_period": null,
+      "payment_method_reference_id": null
+    },
+    "statement_descriptor": "QMARQUEZ",
+    "call_for_authorize_id": null,
+    "installments": 1,
+    "pos_id": null,
+    "external_reference": null,
+    "date_of_expiration": null,
+    "id": 21679284,
+    "payment_type_id": "credit_card",
+    "order": {
+      "id": "1143511357",
+      "type": "mercadopago"
+    },
+    "counter_currency": null,
+    "status_detail": "accredited",
+    "differential_pricing_id": null,
+    "additional_info": {
+      "ip_address": "186.137.29.69"
+    },
+    "live_mode": false,
+    "marketplace_owner": null,
+    "card": {
+      "first_six_digits": "450995",
+      "expiration_year": 2025,
+      "date_created": "2019-09-13T10:43:31.000-04:00",
+      "expiration_month": 11,
+      "id": null,
+      "cardholder": {
+        "identification": {
+          "number": "35991142",
+          "type": "DNI"
+        },
+        "name": "Quim"
+      },
+      "last_four_digits": "3704",
+      "date_last_updated": "2019-09-13T10:43:31.000-04:00"
+    },
+    "status": "approved",
+    "transaction_amount_refunded": 0,
+    "transaction_amount": 300,
+    "description": "Playstation PS4 pro white edition.",
+    "money_release_date": "2019-09-27T10:43:31.000-04:00",
+    "merchant_number": null,
+    "refunds": [],
+    "authorization_code": null,
+    "captured": true,
+    "collector_id": 211601475,
+    "merchant_account_id": null,
+    "taxes_amount": 0,
+    "date_last_updated": "2019-09-13T10:43:31.000-04:00",
+    "coupon_amount": 0,
+    "store_id": null,
+    "date_created": "2019-09-13T10:43:31.000-04:00",
+    "acquirer_reconciliation": [],
+    "sponsor_id": null,
+    "shipping_amount": 0,
+    "issuer_id": "310",
+    "payment_method_id": "visa",
+    "binary_mode": false,
+    "deduction_schema": null,
+    "processing_mode": "aggregator",
+    "currency_id": "ARS",
+    "shipping_cost": 0
+  },
+  "successMSJ": {
+    "collection_id": "21679284",
+    "collection_status": "approved",
+    "external_reference": "null",
+    "payment_type": "credit_card",
+    "merchant_order_id": "1143511357",
+    "preference_id": "211601475-287e9ca8-ab1a-464a-9043-5bf3ef88b374",
+    "site_id": "MLA",
+    "processing_mode": "aggregator",
+    "merchant_account_id": "null"
+  }
+}
+}

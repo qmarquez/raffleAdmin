@@ -1,21 +1,63 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="main-container">
+  <div class="header-container">
+    <h1>Comprá tu rifa</h1>
+    <p>Elegí el sorteo para los que querés participar y sumá chances.</p>
+    <hr>
+    <label for="searchParticipations">¡Buscá tus participaciones!</label>
+    <form>
+      <div class="search-container">
+        <input id="searchParticipations" #searchParticipations type="text" placeholder="DNI">
+        <button class="button find-button" (click)="findParticipations(searchParticipations.value)">Buscar</button>
+      </div>
+    </form>
+  </div>
 
-<router-outlet></router-outlet>
+  <ng-container *ngIf="resumedParticipations">
+    <div class="participations-container">
+      <ng-container *ngFor="let participation of resumedParticipations">
+        <div> Acumulaste para <b>{{ participation.item }} <u>{{participation.count}} chances</u>.</b></div>
+      </ng-container>
+    </div>
+  </ng-container>
+
+
+  <ng-container *ngFor="let raffle of activeRaffles">
+    <div class="raffle-container">
+      <h1>Sorteo:</h1>
+      <h3> {{raffle.title}} </h3>
+      <h5>Fecha del sorteo: {{raffle.raffle_date | date: 'dd/MM/yyy'}}</h5>
+      <ul>
+        <ng-container *ngFor="let benefict of raffle.beneficts">
+          <li>{{benefict}}</li>
+        </ng-container>
+      </ul>
+      <h2>Valor de la participación: ${{raffle.unit_price | number: '3.2-2'}}.-</h2>
+      <h4>Comprando mas de una: ${{raffle.offer_price | number: '3.2-2'}}.- c/u</h4>
+      <ng-container *ngIf="showDataForm">
+        <form class="form">
+          <span class="form-advice">Con estos datos nos vamos a poner en contacto con el ganador<br> <b>¡¡Completalos con atención!!</b></span>
+          <ng-container *ngIf="raffle.showAlert">
+            <div class="data-incomplete-alert">HAY DATOS INCOMPLETOS</div>
+          </ng-container>
+          <input type="text" [(ngModel)]="raffle.participant.name" name="name" id="name" placeholder="Nombre completo">
+          <input type="email" [(ngModel)]="raffle.participant.email" name="email" id="email" placeholder="email">
+          <input type="number" [(ngModel)]="raffle.participant.DNI" name="DNI" id="DNI" placeholder="Documento (DNI)">
+          <input type="tel" [(ngModel)]="raffle.participant.phone" name="phone" id="phone" placeholder="Teléfono de contacto">
+          <label for="rafflesToBuy">Cantidad de rifas:</label><input type="number" [(ngModel)]="raffle.participant.participations" name="rafflesToBuy" id="rafflesToBuy" placeholder="">
+        </form>
+      </ng-container>
+      <ng-container *ngIf="!showDataForm; else onBuyButtons">
+        <button class="button buy-button" (click)="showDataForm = true">Comprar</button>
+      </ng-container>
+      <ng-template #onBuyButtons>
+        <ng-container *ngIf="raffle.initPoint">
+          <a class="button buy-button pay" [href]="raffle.initPoint" target="_blank">Pagar</a>
+        </ng-container>
+        <div class="buttons-container">
+          <button class="button buy-button half" (click)="onSecondBuyClick(raffle)">Generar link</button>
+          <button class="button cancel-button" (click)="showDataForm = false">Cancelar</button>
+        </div>
+      </ng-template>
+    </div>
+  </ng-container>
+</div>

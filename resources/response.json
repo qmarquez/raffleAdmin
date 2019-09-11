@@ -1,0 +1,417 @@
+{
+  "paging": {
+    "total": 4,
+    "limit": 30,
+    "offset": 0
+  },
+  "results": [
+    {
+      "metadata": {},
+      "operation_type": "regular_payment",
+      "fee_details": [],
+      "notification_url": null,
+      "date_approved": null,
+      "acquirer": null,
+      "money_release_schema": null,
+      "payer": {
+        "first_name": "Test",
+        "last_name": "Test",
+        "email": "test_user_80507629@testuser.com",
+        "identification": {
+          "number": "32659430",
+          "type": "DNI"
+        },
+        "phone": {
+          "area_code": "01",
+          "number": "1111-1111",
+          "extension": ""
+        },
+        "type": "registered",
+        "entity_type": null,
+        "id": "469813491"
+      },
+      "transaction_details": {
+        "total_paid_amount": 300,
+        "acquirer_reference": null,
+        "installment_amount": 300,
+        "financial_institution": null,
+        "net_received_amount": 0,
+        "overpaid_amount": 0,
+        "external_resource_url": null,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null
+      },
+      "statement_descriptor": "QMARQUEZ",
+      "call_for_authorize_id": null,
+      "installments": 1,
+      "pos_id": null,
+      "external_reference": null,
+      "date_of_expiration": null,
+      "id": 21612311,
+      "payment_type_id": "debit_card",
+      "order": {
+        "id": "1142370640",
+        "type": "mercadopago"
+      },
+      "counter_currency": null,
+      "status_detail": "cc_rejected_other_reason",
+      "differential_pricing_id": null,
+      "additional_info": {
+        "ip_address": "200.105.75.138"
+      },
+      "live_mode": false,
+      "marketplace_owner": null,
+      "card": {
+        "first_six_digits": "451766",
+        "expiration_year": 2035,
+        "date_created": "2019-09-10T10:19:09.000-04:00",
+        "expiration_month": 1,
+        "id": null,
+        "cardholder": {
+          "identification": {
+            "number": "12345678",
+            "type": "DNI"
+          },
+          "name": "asdsas"
+        },
+        "last_four_digits": "9687",
+        "date_last_updated": "2019-09-10T10:19:09.000-04:00"
+      },
+      "status": "rejected",
+      "transaction_amount_refunded": 0,
+      "transaction_amount": 300,
+      "description": "Playstation PS4 pro white edition.",
+      "money_release_date": null,
+      "merchant_number": null,
+      "refunds": [],
+      "authorization_code": null,
+      "captured": true,
+      "collector_id": 211601475,
+      "merchant_account_id": null,
+      "taxes_amount": 0,
+      "date_last_updated": "2019-09-10T10:19:12.000-04:00",
+      "coupon_amount": 0,
+      "store_id": null,
+      "date_created": "2019-09-10T10:19:09.000-04:00",
+      "acquirer_reconciliation": [],
+      "sponsor_id": null,
+      "shipping_amount": 0,
+      "issuer_id": "1",
+      "payment_method_id": "debvisa",
+      "binary_mode": false,
+      "deduction_schema": null,
+      "processing_mode": "aggregator",
+      "currency_id": "ARS",
+      "shipping_cost": 0
+    },
+    {
+      "metadata": {},
+      "operation_type": "regular_payment",
+      "fee_details": [],
+      "notification_url": null,
+      "date_approved": null,
+      "acquirer": null,
+      "money_release_schema": null,
+      "payer": {
+        "first_name": "Test",
+        "last_name": "Test",
+        "email": "test_user_80507629@testuser.com",
+        "identification": {
+          "number": "32659430",
+          "type": "DNI"
+        },
+        "phone": {
+          "area_code": "01",
+          "number": "1111-1111",
+          "extension": ""
+        },
+        "type": "registered",
+        "entity_type": null,
+        "id": "469813491"
+      },
+      "transaction_details": {
+        "total_paid_amount": 300,
+        "acquirer_reference": null,
+        "installment_amount": 300,
+        "financial_institution": null,
+        "net_received_amount": 0,
+        "overpaid_amount": 0,
+        "external_resource_url": null,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null
+      },
+      "statement_descriptor": "QMARQUEZ",
+      "call_for_authorize_id": null,
+      "installments": 1,
+      "pos_id": null,
+      "external_reference": null,
+      "date_of_expiration": null,
+      "id": 21612332,
+      "payment_type_id": "debit_card",
+      "order": {
+        "id": "1142370640",
+        "type": "mercadopago"
+      },
+      "counter_currency": null,
+      "status_detail": "cc_rejected_other_reason",
+      "differential_pricing_id": null,
+      "additional_info": {
+        "ip_address": "200.105.75.138"
+      },
+      "live_mode": false,
+      "marketplace_owner": null,
+      "card": {
+        "first_six_digits": "451766",
+        "expiration_year": 2025,
+        "date_created": "2019-09-10T10:20:10.000-04:00",
+        "expiration_month": 9,
+        "id": null,
+        "cardholder": {
+          "identification": {
+            "number": "35991142",
+            "type": "DNI"
+          },
+          "name": "Marquez quimey l"
+        },
+        "last_four_digits": "9687",
+        "date_last_updated": "2019-09-10T10:20:10.000-04:00"
+      },
+      "status": "rejected",
+      "transaction_amount_refunded": 0,
+      "transaction_amount": 300,
+      "description": "Playstation PS4 pro white edition.",
+      "money_release_date": null,
+      "merchant_number": null,
+      "refunds": [],
+      "authorization_code": null,
+      "captured": true,
+      "collector_id": 211601475,
+      "merchant_account_id": null,
+      "taxes_amount": 0,
+      "date_last_updated": "2019-09-10T10:20:12.000-04:00",
+      "coupon_amount": 0,
+      "store_id": null,
+      "date_created": "2019-09-10T10:20:10.000-04:00",
+      "acquirer_reconciliation": [],
+      "sponsor_id": null,
+      "shipping_amount": 0,
+      "issuer_id": "1",
+      "payment_method_id": "debvisa",
+      "binary_mode": false,
+      "deduction_schema": null,
+      "processing_mode": "aggregator",
+      "currency_id": "ARS",
+      "shipping_cost": 0
+    },
+    {
+      "metadata": {},
+      "operation_type": "regular_payment",
+      "fee_details": [
+        {
+          "amount": 12.66,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "notification_url": null,
+      "date_approved": "2019-09-10T10:27:54.000-04:00",
+      "acquirer": null,
+      "money_release_schema": null,
+      "payer": {
+        "first_name": "Test",
+        "last_name": "Test",
+        "email": "test_user_80507629@testuser.com",
+        "identification": {
+          "number": "32659430",
+          "type": "DNI"
+        },
+        "phone": {
+          "area_code": "01",
+          "number": "1111-1111",
+          "extension": ""
+        },
+        "type": "registered",
+        "entity_type": null,
+        "id": "469813491"
+      },
+      "transaction_details": {
+        "total_paid_amount": 300,
+        "acquirer_reference": null,
+        "installment_amount": 300,
+        "financial_institution": null,
+        "net_received_amount": 287.34,
+        "overpaid_amount": 0,
+        "external_resource_url": null,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null
+      },
+      "statement_descriptor": "QMARQUEZ",
+      "call_for_authorize_id": null,
+      "installments": 1,
+      "pos_id": null,
+      "external_reference": null,
+      "date_of_expiration": null,
+      "id": 21612456,
+      "payment_type_id": "credit_card",
+      "order": {
+        "id": "1142375258",
+        "type": "mercadopago"
+      },
+      "counter_currency": null,
+      "status_detail": "accredited",
+      "differential_pricing_id": null,
+      "additional_info": {
+        "ip_address": "200.105.75.138"
+      },
+      "live_mode": false,
+      "marketplace_owner": null,
+      "card": {
+        "first_six_digits": "503175",
+        "expiration_year": 2025,
+        "date_created": "2019-09-10T10:27:53.000-04:00",
+        "expiration_month": 11,
+        "id": null,
+        "cardholder": {
+          "identification": {
+            "number": "12345678",
+            "type": "DNI"
+          },
+          "name": "Cosme fulanito"
+        },
+        "last_four_digits": "0604",
+        "date_last_updated": "2019-09-10T10:27:53.000-04:00"
+      },
+      "status": "approved",
+      "transaction_amount_refunded": 0,
+      "transaction_amount": 300,
+      "description": "Playstation PS4 pro white edition.",
+      "money_release_date": "2019-09-24T10:27:54.000-04:00",
+      "merchant_number": null,
+      "refunds": [],
+      "authorization_code": null,
+      "captured": true,
+      "collector_id": 211601475,
+      "merchant_account_id": null,
+      "taxes_amount": 0,
+      "date_last_updated": "2019-09-10T10:27:54.000-04:00",
+      "coupon_amount": 0,
+      "store_id": null,
+      "date_created": "2019-09-10T10:27:53.000-04:00",
+      "acquirer_reconciliation": [],
+      "sponsor_id": null,
+      "shipping_amount": 0,
+      "issuer_id": "3",
+      "payment_method_id": "master",
+      "binary_mode": false,
+      "deduction_schema": null,
+      "processing_mode": "aggregator",
+      "currency_id": "ARS",
+      "shipping_cost": 0
+    },
+    {
+      "metadata": {},
+      "operation_type": "regular_payment",
+      "fee_details": [
+        {
+          "amount": 12.66,
+          "fee_payer": "collector",
+          "type": "mercadopago_fee"
+        }
+      ],
+      "notification_url": null,
+      "date_approved": "2019-09-10T13:42:04.000-04:00",
+      "acquirer": null,
+      "money_release_schema": null,
+      "payer": {
+        "first_name": "Test",
+        "last_name": "Test",
+        "email": "test_user_80507629@testuser.com",
+        "identification": {
+          "number": "32659430",
+          "type": "DNI"
+        },
+        "phone": {
+          "area_code": "01",
+          "number": "1111-1111",
+          "extension": ""
+        },
+        "type": "registered",
+        "entity_type": null,
+        "id": "32511764"
+      },
+      "transaction_details": {
+        "total_paid_amount": 300,
+        "acquirer_reference": null,
+        "installment_amount": 300,
+        "financial_institution": null,
+        "net_received_amount": 287.34,
+        "overpaid_amount": 0,
+        "external_resource_url": null,
+        "payable_deferral_period": null,
+        "payment_method_reference_id": null
+      },
+      "statement_descriptor": "QMARQUEZ",
+      "call_for_authorize_id": null,
+      "installments": 1,
+      "pos_id": null,
+      "external_reference": null,
+      "date_of_expiration": null,
+      "id": 21615016,
+      "payment_type_id": "credit_card",
+      "order": {
+        "id": "1142469983",
+        "type": "mercadopago"
+      },
+      "counter_currency": null,
+      "status_detail": "accredited",
+      "differential_pricing_id": null,
+      "additional_info": {
+        "ip_address": "200.105.75.138"
+      },
+      "live_mode": false,
+      "marketplace_owner": null,
+      "card": {
+        "first_six_digits": "503175",
+        "expiration_year": 2025,
+        "date_created": "2019-09-10T13:42:03.000-04:00",
+        "expiration_month": 11,
+        "id": null,
+        "cardholder": {
+          "identification": {
+            "number": "12534568",
+            "type": "DNI"
+          },
+          "name": "Quim"
+        },
+        "last_four_digits": "0604",
+        "date_last_updated": "2019-09-10T13:42:03.000-04:00"
+      },
+      "status": "approved",
+      "transaction_amount_refunded": 0,
+      "transaction_amount": 300,
+      "description": "Playstation PS4 pro white edition.",
+      "money_release_date": "2019-09-24T13:42:04.000-04:00",
+      "merchant_number": null,
+      "refunds": [],
+      "authorization_code": null,
+      "captured": true,
+      "collector_id": 211601475,
+      "merchant_account_id": null,
+      "taxes_amount": 0,
+      "date_last_updated": "2019-09-10T13:42:04.000-04:00",
+      "coupon_amount": 0,
+      "store_id": null,
+      "date_created": "2019-09-10T13:42:03.000-04:00",
+      "acquirer_reconciliation": [],
+      "sponsor_id": null,
+      "shipping_amount": 0,
+      "issuer_id": "3",
+      "payment_method_id": "master",
+      "binary_mode": false,
+      "deduction_schema": null,
+      "processing_mode": "aggregator",
+      "currency_id": "ARS",
+      "shipping_cost": 0
+    }
+  ]
+}
